@@ -18,6 +18,7 @@ class VideoScreen extends StatelessWidget {
           child: Container(
             width: 50,
             height: 50,
+            padding: const EdgeInsets.all(1),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(25),

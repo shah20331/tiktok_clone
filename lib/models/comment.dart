@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class Comment {
   String username;
   String comment;
-  DateTime datePublished;
+  final datePublished;
   List likes;
   String profilePhoto;
   String uid;
@@ -18,7 +18,7 @@ class Comment {
     required this.username,
   });
   Map<String, dynamic> toJason() => {
-        'username': username,
+        'name': username,
         'comment': comment,
         'datePublished': datePublished,
         'likes': likes,
@@ -36,6 +36,6 @@ class Comment {
         likes: snapshot['likes'],
         profilePhoto: snapshot['profilePhoto'],
         uid: snapshot['uid'],
-        username: snapshot['username']);
+        username: snapshot['name']);
   }
 }

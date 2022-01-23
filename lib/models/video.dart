@@ -26,7 +26,7 @@ class Video {
     required this.videoUrl,
   });
   Map<String, dynamic> toJason() => {
-        'username': username,
+        'name': username,
         'uid': uid,
         'profilePhoto': profilePhoto,
         'id': id,
@@ -50,7 +50,7 @@ class Video {
         songname: snapshot['songname'],
         thumbnail: snapshot['thumbnail'],
         uid: snapshot['uid'],
-        username: snapshot['username'],
+        username: snapshot['name'],
         videoUrl: snapshot['videoUrl']);
   }
 }
