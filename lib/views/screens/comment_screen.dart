@@ -8,7 +8,7 @@ class CommentScreen extends StatelessWidget {
   final String id;
   CommentScreen({Key? key, required this.id}) : super(key: key);
   final TextEditingController _commentcontroller = TextEditingController();
-  CommentController commentController = Get.put(CommentController());
+  final CommentController commentController = Get.put(CommentController());
 
   @override
   Widget build(BuildContext context) {

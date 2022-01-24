@@ -17,7 +17,7 @@ class SearchScreen extends StatelessWidget {
             decoration: const InputDecoration(
               filled: false,
               hintText: 'Search',
-              hintStyle: const TextStyle(
+              hintStyle: TextStyle(
                 fontSize: 18,
                 color: Colors.white,
               ),
@@ -42,7 +42,7 @@ class SearchScreen extends StatelessWidget {
                   User user = searchController.searchedUsers[index];
                   return InkWell(
                     onTap: () {
-                      Get.to(ProfileScreen(id: user.uid));
+                      Get.to(ProfileScreen(uid: user.uid));
                     },
                     child: ListTile(
                       leading: CircleAvatar(

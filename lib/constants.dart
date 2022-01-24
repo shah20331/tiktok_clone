@@ -25,5 +25,5 @@ List pages = [
   SearchScreen(),
   const AddVideoScreen(),
   const Center(child: Text('massage')),
-  ProfileScreen(id: authController.user.uid),
+  ProfileScreen(uid: authController.user.uid),
 ];
